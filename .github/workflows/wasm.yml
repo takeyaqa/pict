@@ -7,7 +7,7 @@ jobs:
   build:
     
     runs-on: ubuntu-latest
-    container: emscripten/emsdk:latest
+    container: emscripten/emsdk:4.0.4
 
     steps:
     - uses: actions/checkout@v4
