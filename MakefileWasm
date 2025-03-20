@@ -14,7 +14,7 @@ OBJS_CLI += cli/gcdexcl.o cli/gcdmodel.o cli/model.o cli/mparser.o
 OBJS_CLI += cli/pict.o cli/strings.o
 
 wasm: $(OBJS)
-	$(CXX) $(OBJS) -fwasm-exceptions -sSTRICT=1 -sENVIRONMENT=web,webview,worker -sMODULARIZE=1 -sEXPORT_ES6=1 -sINVOKE_RUN=0 -sEXPORTED_RUNTIME_METHODS=callMain,FS -sINCOMING_MODULE_JS_API=preRun -o $(TARGET)
+	$(CXX) $(OBJS) -O2 -fwasm-exceptions -sSTRICT=1 -sENVIRONMENT=web,webview,worker -sMODULARIZE=1 -sEXPORT_ES6=1 -sINVOKE_RUN=0 -sEXPORTED_RUNTIME_METHODS=callMain,FS -sINCOMING_MODULE_JS_API=print,printErr -o $(TARGET)
 
 clean:
 	rm -f $(TARGET) $(TARGET_WASM) $(OBJS)
