@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Typescript
+        run: npm install -g typescript
+
       - name: Compile
         run: make -f MakefileWasm
 
