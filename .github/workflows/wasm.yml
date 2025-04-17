@@ -20,4 +20,5 @@ jobs:
           name: pict
           path: |
             pict.mjs
+            pict.d.ts
             pict.wasm
