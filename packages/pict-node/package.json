@@ -1,0 +1,22 @@
+{
+  "name": "@takeyaqa/pict-node",
+  "description": "Pairwise Independent Combinatorial Testing for Node.js",
+  "version": "3.7.4-fork.1",
+  "scripts": {
+    "prepack": "cp ../../README.md . && cp ../../LICENSE.TXT .",
+    "postpack": "rm README.md LICENSE.TXT"
+  },
+  "type": "module",
+  "main": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/takeyaqa/pict",
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takeyaqa/pict/issues"
+  },
+  "homepage": "https://github.com/takeyaqa/pict#readme"
+}

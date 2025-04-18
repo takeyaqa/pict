@@ -1,0 +1,28 @@
+name: Publish WebAssembly to GitHub Packages
+on:
+  release:
+    types: [published]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    container: emscripten/emsdk:4.0.7
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@takeyaqa'
+      - name: Install Typescript
+        run: npm install -g typescript
+      - name: Compile
+        run: make wasm-all
+      - run: npm ci
+      - run: npm publish --workspaces
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
