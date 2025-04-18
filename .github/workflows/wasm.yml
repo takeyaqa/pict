@@ -6,10 +6,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: emscripten/emsdk:4.0.5
+    container: emscripten/emsdk:4.0.7
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install Typescript
+        run: npm install -g typescript
 
       - name: Compile
         run: make -f MakefileWasm
@@ -20,4 +23,5 @@ jobs:
           name: pict
           path: |
             pict.mjs
+            pict.d.ts
             pict.wasm
