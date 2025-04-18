@@ -1,0 +1,8 @@
+{
+  "name": "@takeyaqa/pict",
+  "private": true,
+  "workspaces": [
+    "packages/pict-browser",
+    "packages/pict-node"
+  ]
+}
