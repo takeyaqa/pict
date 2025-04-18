@@ -1,7 +1,7 @@
 {
   "name": "@takeyaqa/pict",
   "private": true,
-  "version": "3.7.4-fork.4",
+  "version": "3.7.4-fork.5",
   "scripts": {
     "build": "make wasm-all",
     "clean": "make wasm-clean"
