@@ -1,7 +1,7 @@
 {
   "name": "@takeyaqa/pict-browser",
   "description": "Pairwise Independent Combinatorial Testing for Browser",
-  "version": "3.7.4-fork.1",
+  "version": "3.7.4-fork.2",
   "scripts": {
     "prepack": "cp ../../README.md . && cp ../../LICENSE.TXT .",
     "postpack": "rm README.md LICENSE.TXT"
@@ -12,7 +12,10 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/takeyaqa/pict",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takeyaqa/pict.git"
+  },
   "author": "Microsoft Corporation",
   "license": "MIT",
   "bugs": {

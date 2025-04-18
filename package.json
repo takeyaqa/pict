@@ -1,6 +1,14 @@
 {
   "name": "@takeyaqa/pict",
   "private": true,
+  "version": "3.7.4-fork.2",
+  "scripts": {
+    "build": "make wasm-all",
+    "clean": "make wasm-clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
   "workspaces": [
     "packages/pict-browser",
     "packages/pict-node"
