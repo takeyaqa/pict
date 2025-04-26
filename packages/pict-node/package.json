@@ -1,7 +1,7 @@
 {
   "name": "@takeyaqa/pict-node",
   "description": "Pairwise Independent Combinatorial Testing for Node.js",
-  "version": "3.7.4-fork.6",
+  "version": "3.7.4-fork.7",
   "scripts": {
     "prepack": "cp ../../README.md . && cp ../../LICENSE.TXT .",
     "postpack": "rm README.md LICENSE.TXT"

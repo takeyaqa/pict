@@ -1,4 +1,5 @@
-import { PictParameter, PictOutput, PictOptions, PictSubModel } from './types'
+import { PictParameter, PictOutput, PictOptions, PictSubModel } from './types.js'
+// @ts-ignore
 import  createModule, { MainModule } from '../dist/pict'
 
 export class PictRunner {
