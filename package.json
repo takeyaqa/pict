@@ -1,9 +1,9 @@
 {
   "name": "@takeyaqa/pict",
   "private": true,
-  "version": "3.7.4-fork.5",
+  "version": "3.7.4-fork.6",
   "scripts": {
-    "build": "make wasm-all",
+    "build": "make wasm-all && npx --workspaces tsc",
     "clean": "make wasm-clean"
   },
   "devDependencies": {

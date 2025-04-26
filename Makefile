@@ -27,8 +27,8 @@ EXXLINKFLAGS+=-sINCOMING_MODULE_JS_API=print,printErr
 EXXLINKFLAGS+=-sEXPORTED_RUNTIME_METHODS=callMain,FS
 TARGET_BROWSER_DIR=packages/pict-browser/dist
 TARGET_NODE_DIR=packages/pict-node/dist
-TARGET_JS=index.mjs
-TARGET_TSD=index.d.ts
+TARGET_JS=pict.mjs
+TARGET_TSD=pict.d.ts
 WASM_WORK_DIR=wasm-work
 WASM_OBJS=$(WASM_OBJS_API) $(WASM_OBJS_CLI)
 WASM_OBJS_API=$(WASM_WORK_DIR)/api/combination.o $(WASM_WORK_DIR)/api/deriver.o $(WASM_WORK_DIR)/api/exclusion.o
