@@ -1,7 +1,7 @@
 {
   "name": "@takeyaqa/pict",
   "private": true,
-  "version": "3.7.4-fork.6",
+  "version": "3.7.4-fork.7",
   "scripts": {
     "build": "make wasm-all && npx --workspaces tsc",
     "clean": "make wasm-clean"
